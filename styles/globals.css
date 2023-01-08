@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -85,23 +89,55 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.coin-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.coin-table td,
+.coin-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.coin-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.coin-table tr:hover {
+  background-color: #ddd;
+}
+.coin-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(15 23 42);
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .coin-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    margin: auto;
+  }
+  .coin-table td,
+  .coin-table th {
+    border: 1px solid #ddd;
+    padding: 2px;
+  }
+  .coin-table th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    background-color: rgb(15 23 42);
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
   }
 }
