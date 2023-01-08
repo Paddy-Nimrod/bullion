@@ -115,11 +115,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .coin-table {
     border-collapse: collapse;
     width: 100%;
