@@ -1,8 +1,25 @@
 const HomeComponent = () => {
   return (
     <>
-      <div className="p-5 md:p-11 lg:p-11 md:w-4/5 lg:w-4/5 m-auto">
-        <table class="coin-table table-auto w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-1 ">
+        <div className="flex justify-center items-center gold-card bg-sky-900 m-5 rounded-md h-20 sm:h-24 md:h-40 text-white text-center ">
+          <p>Gold Coin</p>
+        </div>
+        <div className="flex justify-center items-center bg-sky-900 m-5 rounded-md h-20 sm:h-24 md:h-40 text-white text-center ">
+          <p>Gold Bars</p>
+        </div>
+        <div className="flex justify-center items-center silver-card m-5 rounded-md h-20 sm:h-24 md:h-40 text-white text-center ">
+          <p>Silver Coin</p>
+        </div>
+        <div className="flex justify-center items-center bg-sky-900 m-5 rounded-md h-20 sm:h-24 md:h-40 text-white text-center ">
+          <p>Silver bar</p>
+        </div>
+        <div className="flex justify-center items-center bg-sky-900 m-5 rounded-md h-20 sm:h-24 md:h-40 text-white text-center ">
+          <p>silver Rounds</p>
+        </div>
+      </div>
+      <div className="p-5 md:p-11 lg:p-11 md:w-full lg:w-full m-auto">
+        <table className="coin-table table-auto w-full">
           <thead className="bg-slate-900">
             <tr>
               <th>coin name</th>

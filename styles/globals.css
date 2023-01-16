@@ -136,3 +136,9 @@ body {
     text-transform: capitalize;
   }
 }
+.gold-card {
+  background-color: #ffd700;
+}
+.silver-card {
+  background-color: #808080;
+}
